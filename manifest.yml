@@ -1,0 +1,6 @@
+applications:
+- name: troy-swift-test
+  memory: 256M
+  instances: 1
+  command: kitura-test
+  buildpack: swift_buildpack
