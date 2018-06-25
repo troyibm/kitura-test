@@ -3,6 +3,8 @@ import Kitura
 // Create a new router
 let router = Router()
 
+router.all("/", middleware: StaticFileServer(path: "./"))
+
 // Handle HTTP GET requests to /
 router.get("/") { request, response, next in
     do {
